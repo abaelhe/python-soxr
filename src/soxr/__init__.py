@@ -3,6 +3,8 @@
 # Python-SoXR is a Python wrapper of libsoxr.
 # https://github.com/dofuuz/python-soxr
 
+from .version import version as __version__
+
 import warnings
 
 import numpy as np
@@ -11,8 +13,6 @@ from .cysoxr import CySoxr
 from .cysoxr import cysoxr_divide_proc
 from .cysoxr import cysoxr_oneshot
 from .cysoxr import QQ, LQ, MQ, HQ, VHQ
-
-from .version import version as __version__
 
 
 # libsoxr locates memory per each channel.
